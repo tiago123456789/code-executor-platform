@@ -1,0 +1,3 @@
+FROM python
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]

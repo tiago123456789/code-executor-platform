@@ -1,0 +1,25 @@
+version: "3"
+
+services: 
+
+    node:
+        build:
+            dockerfile: Dockerfile
+            context:  .
+        restart: always
+        container_name: node-container
+    
+    php:
+        build:
+            dockerfile: Dockerfile.php
+            context:  .
+        restart: always
+        container_name: php-container
+
+    
+    python:
+        build:
+            dockerfile: Dockerfile.python
+            context:  .
+        restart: always
+        container_name: python-container
